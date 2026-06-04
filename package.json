@@ -1,0 +1,22 @@
+{
+  "name": "glyf-js-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev:demo": "npm run build --workspace @glyf/client && npm run build --workspace @glyf/react && npm run dev --workspace @glyf/example-startup-saas",
+    "build:demo": "npm run build --workspace @glyf/client && npm run build --workspace @glyf/react && npm run build --workspace @glyf/example-startup-saas",
+    "preview:demo": "npm run preview --workspace @glyf/example-startup-saas"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.7"
+  }
+}

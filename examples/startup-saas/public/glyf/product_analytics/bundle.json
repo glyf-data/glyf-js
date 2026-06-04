@@ -1,0 +1,214 @@
+{
+  "bundle_version": "1",
+  "charts": {
+    "activation_by_plan": {
+      "artifacts": {
+        "compiled_sql": "compiled/activation_by_plan.sql",
+        "data": null,
+        "metadata": "charts/activation_by_plan.json",
+        "png": "charts/activation_by_plan.png",
+        "svg": "charts/activation_by_plan.svg",
+        "vega": null
+      },
+      "chart_type": "line",
+      "fields": {
+        "x": "week",
+        "y": "activated_users"
+      },
+      "interactions": [
+        "tooltip",
+        "legend_filter"
+      ],
+      "title": "Activation by Plan"
+    },
+    "activation_rate_by_plan": {
+      "artifacts": {
+        "compiled_sql": "compiled/activation_rate_by_plan.sql",
+        "data": null,
+        "metadata": "charts/activation_rate_by_plan.json",
+        "png": "charts/activation_rate_by_plan.png",
+        "svg": "charts/activation_rate_by_plan.svg",
+        "vega": null
+      },
+      "chart_type": "line",
+      "fields": {
+        "x": "week",
+        "y": "activation_rate"
+      },
+      "interactions": [
+        "tooltip",
+        "legend_filter"
+      ],
+      "title": "Activation Rate by Plan"
+    },
+    "active_users": {
+      "artifacts": {
+        "compiled_sql": "compiled/active_users.sql",
+        "data": null,
+        "metadata": "charts/active_users.json",
+        "png": "charts/active_users.png",
+        "svg": "charts/active_users.svg",
+        "vega": null
+      },
+      "chart_type": "area",
+      "fields": {
+        "x": "week",
+        "y": "active_users"
+      },
+      "interactions": [
+        "tooltip"
+      ],
+      "title": "Active Users"
+    },
+    "sessions_by_plan": {
+      "artifacts": {
+        "compiled_sql": "compiled/sessions_by_plan.sql",
+        "data": null,
+        "metadata": "charts/sessions_by_plan.json",
+        "png": "charts/sessions_by_plan.png",
+        "svg": "charts/sessions_by_plan.svg",
+        "vega": null
+      },
+      "chart_type": "pie",
+      "fields": {
+        "x": "plan",
+        "y": "sessions"
+      },
+      "interactions": [
+        "tooltip"
+      ],
+      "title": "Sessions by Plan"
+    },
+    "sessions_per_user": {
+      "artifacts": {
+        "compiled_sql": "compiled/sessions_per_user.sql",
+        "data": null,
+        "metadata": "charts/sessions_per_user.json",
+        "png": "charts/sessions_per_user.png",
+        "svg": "charts/sessions_per_user.svg",
+        "vega": null
+      },
+      "chart_type": "bar",
+      "fields": {
+        "x": "week",
+        "y": "sessions_per_user"
+      },
+      "interactions": [
+        "tooltip"
+      ],
+      "title": "Sessions per Active User"
+    },
+    "sessions_scatter": {
+      "artifacts": {
+        "compiled_sql": "compiled/sessions_scatter.sql",
+        "data": null,
+        "metadata": "charts/sessions_scatter.json",
+        "png": "charts/sessions_scatter.png",
+        "svg": "charts/sessions_scatter.svg",
+        "vega": null
+      },
+      "chart_type": "scatter",
+      "fields": {
+        "x": "active_users",
+        "y": "sessions"
+      },
+      "interactions": [
+        "tooltip",
+        "zoom"
+      ],
+      "title": "Sessions vs Active Users"
+    }
+  },
+  "dashboards": {
+    "macro_showcase": {
+      "chart_theme": "auto",
+      "charts": [
+        "active_users",
+        "activation_by_plan"
+      ],
+      "description": "Demo dashboard that exercises built-in dashboard macros, aliases, and project macros.",
+      "filters": [
+        {
+          "field": "plan",
+          "source": {
+            "chart": "activation_by_plan",
+            "field": "plan"
+          },
+          "values": []
+        },
+        {
+          "field": "focus",
+          "values": [
+            "activation",
+            "sessions",
+            "retention"
+          ]
+        }
+      ],
+      "path": "dashboards/macro_showcase.html",
+      "source": "dashboards/macro_showcase.yml",
+      "tags": [
+        "macros",
+        "components",
+        "demo"
+      ],
+      "theme": "light",
+      "title": "Macro Showcase"
+    },
+    "product": {
+      "chart_theme": "auto",
+      "charts": [
+        "active_users",
+        "sessions_scatter",
+        "activation_by_plan",
+        "activation_rate_by_plan",
+        "sessions_per_user",
+        "sessions_by_plan"
+      ],
+      "description": "Product usage and activation metrics by plan.",
+      "filters": [
+        {
+          "field": "plan",
+          "source": {
+            "chart": "activation_by_plan",
+            "field": "plan"
+          },
+          "values": []
+        },
+        {
+          "field": "team",
+          "values": [
+            "product",
+            "lifecycle"
+          ]
+        }
+      ],
+      "path": "dashboards/product.html",
+      "source": "dashboards/product.yml",
+      "tags": [
+        "product",
+        "activation",
+        "usage"
+      ],
+      "theme": "light",
+      "title": "Product Analytics"
+    }
+  },
+  "generated_at": "2026-06-04T23:14:07Z",
+  "glyf_version": "0.2.0",
+  "mode": "public_site",
+  "paths": {
+    "assets": "assets/",
+    "charts": "charts/",
+    "compiled": "compiled/",
+    "dashboards": "dashboards/",
+    "index": "index.html"
+  },
+  "project": "product_analytics",
+  "security": {
+    "browser_visible_data": "Public exports include rendered dashboard HTML and public chart artifacts. Embedded app packages may intentionally expose Vega specs to the browser.",
+    "internal_artifacts": [],
+    "internal_artifacts_included": false,
+    "public_export": true
+  }
+}

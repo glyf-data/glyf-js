@@ -1,0 +1,15 @@
+{
+  "chart_type": "scatter",
+  "compiled_sql_path": "compiled/sessions_scatter.sql",
+  "interactions": [
+    "tooltip",
+    "zoom"
+  ],
+  "metadata_path": "charts/sessions_scatter.json",
+  "name": "sessions_scatter",
+  "png_path": "charts/sessions_scatter.png",
+  "svg_path": "charts/sessions_scatter.svg",
+  "title": "Sessions vs Active Users",
+  "x": "active_users",
+  "y": "sessions"
+}
