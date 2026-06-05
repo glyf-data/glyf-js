@@ -40,6 +40,14 @@ export function Analytics() {
 - `@glyf/react`: React provider and components built on top of `@glyf/client`.
 - `@glyf/example-startup-saas`: demo app that loads a copied product analytics bundle from `public/glyf/product_analytics`.
 
+## Docs
+
+- [Overview](docs/overview.md)
+- [@glyf/client](docs/client.md)
+- [@glyf/react](docs/react.md)
+- [Examples](docs/examples.md)
+- [Vite and Next.js](docs/vite-next.md)
+
 ## Local Demo
 
 ```bash
