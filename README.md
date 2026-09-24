@@ -11,9 +11,9 @@ draws the charts in the browser. There is no server and no query at runtime.
 dbt project + .ggsql charts --glyf build--> target/glyf/site/bundle.json --glyf-js--> your app
 ```
 
-**See it:** [Clanker Insights](examples/clanker-insights), a customer-facing
+**See it live:** [clanker.glyfdata.com](https://clanker.glyfdata.com), a customer-facing
 analytics page for a made-up AI agent platform, drawn entirely with
-`@glyf/react`.
+`@glyf/react` ([source](examples/clanker-insights)).
 
 ## Packages
 

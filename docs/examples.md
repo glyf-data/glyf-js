@@ -29,8 +29,17 @@ npm run sync:bundle      # copies target/glyf/site into public/glyf/clanker_insi
 
 The page does not change as long as the chart names stay the same.
 
+## Live
+
+[clanker.glyfdata.com](https://clanker.glyfdata.com)
+
 ## Deploy
 
 ```bash
-npm run deploy:demo      # builds, then deploys the Worker glyf-clanker-demo (examples/clanker-insights/wrangler.jsonc)
+npm run deploy:demo      # builds, then deploys the Worker glyf-clanker-demo to clanker.glyfdata.com
 ```
+
+Each company demo is its own Worker on its own `glyfdata.com` subdomain: copy
+`wrangler.jsonc`, change `name` and the `routes` pattern, and deploy. Cloudflare
+creates the DNS record and certificate. Keep to one level under
+`glyfdata.com`; the free certificate does not cover `a.b.glyfdata.com`.
