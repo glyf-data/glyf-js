@@ -21,12 +21,14 @@ jobs:
       - run: npm run build
       - run: npm test
 
-  # glyf's published schema must still match the copy the contract test uses,
-  # so a bundle change in glyf shows up here, not in a customer's browser.
+  # glyf's schema must still match the copy the contract test uses, so a
+  # bundle change in glyf shows up here, not in a customer's browser. Read
+  # from glyf's repository: glyfdata.com serves the same file but turns away
+  # requests from CI runners.
   schema-in-sync:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - run: |
-          curl -fsSL https://glyfdata.com/schema/bundle.v1.schema.json -o /tmp/published.json
+          curl -fsSL https://raw.githubusercontent.com/glyf-data/glyf/main/schemas/bundle.v1.schema.json -o /tmp/published.json
           diff -u contract/bundle.v1.schema.json /tmp/published.json
