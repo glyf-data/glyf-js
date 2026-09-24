@@ -2,7 +2,7 @@
 
 `examples/clanker-insights` is a customer-facing analytics page for Clanker, a
 made-up platform where companies run AI agents. It shows one customer
-workspace, Acme Logistics, what its five agents did over six weeks: runs,
+workspace, Glyf Data, what its five agents did over six weeks: runs,
 success, run time, spend by model and agent, and failures. Every chart comes
 from glyf.
 

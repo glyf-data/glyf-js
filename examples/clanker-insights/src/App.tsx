@@ -75,7 +75,7 @@ function Rail({ theme, onTheme }: { theme: GlyfTheme; onTheme: (theme: GlyfTheme
       </a>
 
       <div className="workspace">
-        <span className="workspace-name">Acme Logistics</span>
+        <span className="workspace-name">Glyf Data</span>
         <span className="workspace-plan">Team plan, 5 agents</span>
       </div>
 
