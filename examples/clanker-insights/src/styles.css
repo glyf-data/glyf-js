@@ -1,0 +1,471 @@
+/* Clanker: machine-shop enamel and graphite, with safety yellow as the one
+   strong colour. One family, Archivo; its width axis does the shouting. */
+
+:root {
+  --enamel: #e9ece8;
+  --panel: #f6f7f4;
+  --graphite: #1b2220;
+  --steel: #66716c;
+  --rule: #cfd5d0;
+  --safety: #f2c230;
+  --signal: #c4432b;
+  --focus: #1b2220;
+
+  /* @glyf/embed reads these for tiles, tables and filters. */
+  --glyf-text: var(--graphite);
+  --glyf-muted: var(--steel);
+  --glyf-subtle: var(--steel);
+  --glyf-border: var(--rule);
+  --glyf-surface: var(--enamel);
+  --glyf-accent: var(--graphite);
+  --glyf-accent-soft: var(--safety);
+  --glyf-up: #2f7a45;
+  --glyf-down: var(--signal);
+
+  color-scheme: light;
+  font-family: "Archivo", system-ui, sans-serif;
+  font-variation-settings: "wdth" 100;
+  color: var(--graphite);
+  background: var(--enamel);
+}
+
+:root[data-theme="dark"] {
+  --enamel: #141917;
+  --panel: #1b2220;
+  --graphite: #e6ebe7;
+  --steel: #97a39d;
+  --rule: #2c3531;
+  --signal: #ec7a5f;
+  --focus: #f2c230;
+  --glyf-accent: #141917;
+  --glyf-up: #74c98b;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--enamel);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.88em;
+}
+
+.shell {
+  display: grid;
+  grid-template-columns: 232px minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+/* Rail */
+
+.rail {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  height: 100vh;
+  padding: 24px 18px;
+  border-right: 1px solid var(--rule);
+}
+
+.plate {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  align-self: flex-start;
+  padding: 6px 12px 6px 6px;
+  border-radius: 8px;
+  background: var(--safety);
+  color: #1b2220;
+  font-size: 18px;
+  font-variation-settings: "wdth" 125;
+  font-weight: 850;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+}
+
+.mark {
+  width: 28px;
+  height: 28px;
+}
+
+.mark rect {
+  fill: #1b2220;
+}
+
+.mark path {
+  fill: none;
+  stroke: var(--safety);
+  stroke-width: 2.5;
+}
+
+.mark circle {
+  fill: var(--safety);
+}
+
+.workspace {
+  display: grid;
+  gap: 2px;
+  padding-left: 2px;
+}
+
+.workspace-name {
+  font-weight: 700;
+}
+
+.workspace-plan {
+  color: var(--steel);
+  font-size: 13px;
+}
+
+.nav {
+  display: grid;
+  gap: 2px;
+}
+
+.nav-item {
+  padding: 7px 10px;
+  border-radius: 6px;
+  color: var(--steel);
+  text-decoration: none;
+}
+
+.nav-item[aria-disabled="true"] {
+  cursor: default;
+}
+
+.nav-item.is-current {
+  box-shadow: inset 3px 0 0 var(--safety);
+  background: var(--panel);
+  color: var(--graphite);
+  font-weight: 650;
+}
+
+.rail-foot {
+  display: grid;
+  gap: 10px;
+  margin-top: auto;
+  font-size: 13px;
+}
+
+.theme-switch {
+  justify-self: start;
+  padding: 6px 10px;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--graphite);
+  font: inherit;
+  cursor: pointer;
+}
+
+.made-with {
+  color: var(--steel);
+}
+
+/* Page */
+
+.page {
+  max-width: 1320px;
+  padding: 40px 48px 64px;
+}
+
+.masthead {
+  max-width: 62rem;
+  padding-bottom: 28px;
+}
+
+.period {
+  margin: 0 0 10px;
+  color: var(--steel);
+}
+
+/* The one loud thing: a stamped nameplate of a headline. */
+.stamp {
+  margin: 0;
+  font-size: clamp(30px, 4.4vw, 54px);
+  font-variation-settings: "wdth" 125;
+  font-weight: 880;
+  letter-spacing: -0.015em;
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+.lede {
+  max-width: 44rem;
+  margin: 16px 0 0;
+  color: var(--steel);
+  font-size: 17px;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+  padding: 14px 0;
+  border-top: 2px solid var(--graphite);
+  border-bottom: 1px solid var(--rule);
+}
+
+/* The filters' field names are labels, not shouts. */
+.filters .glyf-embed-filter-field {
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--steel);
+}
+
+.filters .glyf-embed-filter button.is-on {
+  color: #1b2220;
+}
+
+.filter-note {
+  margin: 0;
+  color: var(--steel);
+  font-size: 13px;
+}
+
+.filter-note.is-set {
+  color: var(--graphite);
+}
+
+.filter-note button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* One instrument strip, not four cards. */
+.instruments {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 28px 0 8px;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: var(--panel);
+}
+
+.instrument {
+  padding: 18px 22px 20px;
+}
+
+.instrument + .instrument {
+  border-left: 1px solid var(--rule);
+}
+
+.instrument-label {
+  margin: 0 0 6px;
+  color: var(--steel);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.instrument .glyf-kpi-value {
+  font-size: clamp(30px, 7.5vw, 42px);
+  font-variation-settings: "wdth" 118;
+  font-weight: 800;
+}
+
+/* Sections */
+
+.section {
+  padding-top: 44px;
+}
+
+.section-head {
+  display: grid;
+  grid-template-columns: minmax(0, 22rem) minmax(0, 36rem);
+  gap: 8px 40px;
+  align-items: baseline;
+  margin-bottom: 18px;
+}
+
+.section-head h2 {
+  margin: 0;
+  font-size: 24px;
+  font-variation-settings: "wdth" 112;
+  font-weight: 750;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+.section-head p {
+  margin: 0;
+  color: var(--steel);
+}
+
+/* Six tracks: a panel spans a third, a half, two thirds or all of them. */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.panel {
+  grid-column: span 2;
+  min-width: 0;
+  padding: 18px 20px 14px;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: var(--panel);
+}
+
+.panel--half {
+  grid-column: span 3;
+}
+
+.panel--wide {
+  grid-column: span 4;
+}
+
+.panel--full {
+  grid-column: 1 / -1;
+}
+
+.panel-head {
+  margin-bottom: 10px;
+}
+
+.panel-head h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 650;
+}
+
+.panel-head p {
+  margin: 2px 0 0;
+  color: var(--steel);
+  font-size: 13px;
+}
+
+.colophon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 24px;
+  margin-top: 56px;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule);
+  color: var(--steel);
+  font-size: 13px;
+}
+
+.colophon p {
+  max-width: 48rem;
+  margin: 0;
+}
+
+.status {
+  display: grid;
+  place-items: center;
+  gap: 14px;
+  min-height: 100vh;
+  padding: 24px;
+  color: var(--steel);
+  text-align: center;
+}
+
+.status .mark {
+  width: 44px;
+  height: 44px;
+}
+
+/* Narrower screens: the rail becomes a bar, panels stack. */
+
+@media (max-width: 1100px) {
+  .panel,
+  .panel--half,
+  .panel--wide {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 860px) {
+  .shell {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .rail {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 18px;
+    height: auto;
+    padding: 14px 16px;
+    border-right: 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    order: 3;
+    width: 100%;
+  }
+
+  .rail-foot {
+    grid-auto-flow: column;
+    margin: 0 0 0 auto;
+  }
+
+  .made-with {
+    display: none;
+  }
+
+  .page {
+    padding: 28px 16px 48px;
+  }
+
+  .instruments {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .instrument:nth-child(3) {
+    border-left: 0;
+  }
+
+  .instrument:nth-child(n + 3) {
+    border-top: 1px solid var(--rule);
+  }
+
+  .section-head {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

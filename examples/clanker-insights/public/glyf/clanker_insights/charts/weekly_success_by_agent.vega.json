@@ -1,0 +1,252 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300,
+      "stroke": "#d9e2ec"
+    },
+    "axis": {
+      "labelAngle": 0,
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "titleFontWeight": 600,
+      "labelFont": "Hanken Grotesk",
+      "titleFont": "Hanken Grotesk"
+    },
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "titleFontWeight": 600,
+      "labelFont": "Hanken Grotesk",
+      "titleFont": "Hanken Grotesk"
+    },
+    "title": {
+      "fontSize": 15,
+      "fontWeight": 600,
+      "subtitleFontSize": 12,
+      "subtitleFontWeight": 400,
+      "font": "Hanken Grotesk",
+      "subtitleFont": "Hanken Grotesk"
+    }
+  },
+  "data": {
+    "name": "data-f8d439ff9c9733d8759c9ff347708e7c"
+  },
+  "mark": {
+    "type": "line",
+    "point": true
+  },
+  "encoding": {
+    "color": {
+      "field": "agent",
+      "type": "nominal"
+    },
+    "opacity": {
+      "condition": {
+        "param": "param_547311fb35b6b9a3",
+        "value": 1
+      },
+      "value": 0.2
+    },
+    "tooltip": [
+      {
+        "field": "week",
+        "type": "nominal"
+      },
+      {
+        "field": "success_rate",
+        "type": "quantitative"
+      },
+      {
+        "field": "agent",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "axis": {
+        "labelAngle": 0
+      },
+      "field": "week",
+      "title": "Week",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "success_rate",
+      "title": "Succeeded (%)",
+      "type": "quantitative"
+    }
+  },
+  "height": 400,
+  "params": [
+    {
+      "name": "param_547311fb35b6b9a3",
+      "select": {
+        "type": "point",
+        "fields": [
+          "agent"
+        ]
+      },
+      "bind": "legend"
+    }
+  ],
+  "title": {
+    "text": "Success rate by agent",
+    "subtitle": "Code Reviewer dipped in W37 after a tools deploy"
+  },
+  "width": 800,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json",
+  "datasets": {
+    "data-f8d439ff9c9733d8759c9ff347708e7c": [
+      {
+        "week": "2026-W33",
+        "agent": "Code Reviewer",
+        "success_rate": 89.4
+      },
+      {
+        "week": "2026-W33",
+        "agent": "Invoice Parser",
+        "success_rate": 92.8
+      },
+      {
+        "week": "2026-W33",
+        "agent": "Lead Enricher",
+        "success_rate": 91.8
+      },
+      {
+        "week": "2026-W33",
+        "agent": "On-call Summarizer",
+        "success_rate": 95.5
+      },
+      {
+        "week": "2026-W33",
+        "agent": "Support Triage",
+        "success_rate": 94.9
+      },
+      {
+        "week": "2026-W34",
+        "agent": "Code Reviewer",
+        "success_rate": 84.6
+      },
+      {
+        "week": "2026-W34",
+        "agent": "Invoice Parser",
+        "success_rate": 92.9
+      },
+      {
+        "week": "2026-W34",
+        "agent": "Lead Enricher",
+        "success_rate": 87.3
+      },
+      {
+        "week": "2026-W34",
+        "agent": "On-call Summarizer",
+        "success_rate": 76.9
+      },
+      {
+        "week": "2026-W34",
+        "agent": "Support Triage",
+        "success_rate": 95.5
+      },
+      {
+        "week": "2026-W35",
+        "agent": "Code Reviewer",
+        "success_rate": 80.7
+      },
+      {
+        "week": "2026-W35",
+        "agent": "Invoice Parser",
+        "success_rate": 100.0
+      },
+      {
+        "week": "2026-W35",
+        "agent": "Lead Enricher",
+        "success_rate": 90.3
+      },
+      {
+        "week": "2026-W35",
+        "agent": "On-call Summarizer",
+        "success_rate": 100.0
+      },
+      {
+        "week": "2026-W35",
+        "agent": "Support Triage",
+        "success_rate": 96.7
+      },
+      {
+        "week": "2026-W36",
+        "agent": "Code Reviewer",
+        "success_rate": 93.5
+      },
+      {
+        "week": "2026-W36",
+        "agent": "Invoice Parser",
+        "success_rate": 92.9
+      },
+      {
+        "week": "2026-W36",
+        "agent": "Lead Enricher",
+        "success_rate": 86.2
+      },
+      {
+        "week": "2026-W36",
+        "agent": "On-call Summarizer",
+        "success_rate": 95.8
+      },
+      {
+        "week": "2026-W36",
+        "agent": "Support Triage",
+        "success_rate": 92.9
+      },
+      {
+        "week": "2026-W37",
+        "agent": "Code Reviewer",
+        "success_rate": 78.3
+      },
+      {
+        "week": "2026-W37",
+        "agent": "Invoice Parser",
+        "success_rate": 97.3
+      },
+      {
+        "week": "2026-W37",
+        "agent": "Lead Enricher",
+        "success_rate": 89.3
+      },
+      {
+        "week": "2026-W37",
+        "agent": "On-call Summarizer",
+        "success_rate": 100.0
+      },
+      {
+        "week": "2026-W37",
+        "agent": "Support Triage",
+        "success_rate": 94.9
+      },
+      {
+        "week": "2026-W38",
+        "agent": "Code Reviewer",
+        "success_rate": 79.4
+      },
+      {
+        "week": "2026-W38",
+        "agent": "Invoice Parser",
+        "success_rate": 92.9
+      },
+      {
+        "week": "2026-W38",
+        "agent": "Lead Enricher",
+        "success_rate": 93.8
+      },
+      {
+        "week": "2026-W38",
+        "agent": "On-call Summarizer",
+        "success_rate": 85.7
+      },
+      {
+        "week": "2026-W38",
+        "agent": "Support Triage",
+        "success_rate": 91.8
+      }
+    ]
+  }
+}

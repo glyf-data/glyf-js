@@ -1,0 +1,31 @@
+{
+  "chart_type": "bar",
+  "color": "model",
+  "compiled_sql_path": "compiled/spend_by_agent.sql",
+  "interactions": [
+    "tooltip",
+    "legend_filter"
+  ],
+  "lineage": {
+    "models": {
+      "fct_agent_runs": {
+        "parents": [
+          "source:raw.agent_runs"
+        ],
+        "path": "models/fct_agent_runs.sql"
+      }
+    },
+    "sources": [
+      "raw.agent_runs"
+    ]
+  },
+  "metadata_path": "charts/spend_by_agent.json",
+  "name": "spend_by_agent",
+  "png_path": "charts/spend_by_agent.png",
+  "svg_path": "charts/spend_by_agent.svg",
+  "title": "Spend by agent",
+  "x": "agent",
+  "x_title": "Agent",
+  "y": "spend_usd",
+  "y_title": "USD"
+}

@@ -1,0 +1,141 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300,
+      "stroke": "#d9e2ec"
+    },
+    "axis": {
+      "labelAngle": 0,
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "titleFontWeight": 600,
+      "labelFont": "Hanken Grotesk",
+      "titleFont": "Hanken Grotesk"
+    },
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "titleFontWeight": 600,
+      "labelFont": "Hanken Grotesk",
+      "titleFont": "Hanken Grotesk"
+    },
+    "title": {
+      "fontSize": 15,
+      "fontWeight": 600,
+      "subtitleFontSize": 12,
+      "subtitleFontWeight": 400,
+      "font": "Hanken Grotesk",
+      "subtitleFont": "Hanken Grotesk"
+    }
+  },
+  "data": {
+    "name": "data-c216f4bb29ea3e578b0ef1f44ef8767b"
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "color": {
+      "field": "model",
+      "type": "nominal"
+    },
+    "opacity": {
+      "condition": {
+        "param": "param_71b48305c7a3be24",
+        "value": 1
+      },
+      "value": 0.2
+    },
+    "tooltip": [
+      {
+        "field": "agent",
+        "type": "nominal"
+      },
+      {
+        "field": "spend_usd",
+        "type": "quantitative"
+      },
+      {
+        "field": "model",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "axis": {
+        "labelAngle": 0
+      },
+      "field": "agent",
+      "title": "Agent",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "spend_usd",
+      "title": "USD",
+      "type": "quantitative"
+    }
+  },
+  "height": 400,
+  "params": [
+    {
+      "name": "param_71b48305c7a3be24",
+      "select": {
+        "type": "point",
+        "fields": [
+          "model"
+        ]
+      },
+      "bind": "legend"
+    }
+  ],
+  "title": {
+    "text": "Spend by agent",
+    "subtitle": "Six weeks, split by the model each agent ran on"
+  },
+  "width": 800,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json",
+  "datasets": {
+    "data-c216f4bb29ea3e578b0ef1f44ef8767b": [
+      {
+        "agent": "Code Reviewer",
+        "model": "clank-pro",
+        "spend_usd": 183.34
+      },
+      {
+        "agent": "Code Reviewer",
+        "model": "clank-ultra",
+        "spend_usd": 519.6
+      },
+      {
+        "agent": "Invoice Parser",
+        "model": "clank-mini",
+        "spend_usd": 23.01
+      },
+      {
+        "agent": "Lead Enricher",
+        "model": "clank-mini",
+        "spend_usd": 12.48
+      },
+      {
+        "agent": "Lead Enricher",
+        "model": "clank-pro",
+        "spend_usd": 69.77
+      },
+      {
+        "agent": "On-call Summarizer",
+        "model": "clank-ultra",
+        "spend_usd": 401.42
+      },
+      {
+        "agent": "Support Triage",
+        "model": "clank-mini",
+        "spend_usd": 32.02
+      },
+      {
+        "agent": "Support Triage",
+        "model": "clank-pro",
+        "spend_usd": 37.15
+      }
+    ]
+  }
+}

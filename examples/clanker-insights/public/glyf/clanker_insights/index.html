@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <script>try { var t = localStorage.getItem("glyf-theme"); if (t === "light" || t === "dark") { document.documentElement.setAttribute("data-theme", t); } } catch (e) {}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>glyf dashboards</title>
+
+  <link rel="stylesheet" href="assets/dashboard.css?v=aee48092c2">
+
+</head>
+<body>
+  <div class="glyf-page">
+    <header class="glyf-header">
+      <div class="glyf-header-top">
+        <div class="glyf-header-main">
+          <nav class="glyf-breadcrumb" aria-label="Breadcrumb">
+            <span>glyf</span>
+            <span>/</span>
+            <span>dashboards</span>
+          </nav>
+          <div class="glyf-title-row">
+            <h1 class="glyf-title">Dashboards</h1>
+            <span class="glyf-badge">1</span>
+          </div>
+          <p class="glyf-subtitle">Static dashboard pages generated from glyf artifacts.</p>
+        </div>
+        <div class="glyf-actions" aria-label="Page actions">
+          <button class="glyf-icon-btn glyf-theme-toggle" type="button" data-tip="Theme" aria-label="Switch between light and dark" data-glyf-theme-toggle>
+
+  <svg class="glyf-theme-icon glyf-theme-icon--light" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="4"></circle>
+    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+  </svg>
+
+
+  <svg class="glyf-theme-icon glyf-theme-icon--dark" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"></path>
+  </svg>
+
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="glyf-content">
+      <section class="glyf-section" aria-label="Dashboards">
+        <div class="glyf-chart-grid glyf-index-grid" data-auto-columns="true">
+
+          <article class="glyf-card glyf-index-card">
+            <div class="glyf-card-head glyf-index-card-head">
+              <div class="glyf-index-card-heading">
+                <div class="glyf-index-card-meta glyf-mono">insights</div>
+                <a class="glyf-card-title glyf-index-card-title" href="dashboards/insights.html">Platform Insights</a>
+
+                <div class="glyf-card-subtitle glyf-index-card-subtitle">What Acme Logistics&#39; agents did on Clanker over the last six weeks.</div>
+
+
+                <div class="glyf-tags glyf-index-tags" aria-label="Dashboard tags">
+
+                  <span class="glyf-badge glyf-tag glyf-tag--0">agents</span>
+
+                  <span class="glyf-badge glyf-tag glyf-tag--5">usage</span>
+
+                  <span class="glyf-badge glyf-tag glyf-tag--4">spend</span>
+
+                </div>
+
+              </div>
+              <div class="glyf-index-card-side">
+                <span class="glyf-badge">13 charts</span>
+                <span class="glyf-index-card-link">Open</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+    </main>
+  </div>
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const toggle = document.querySelector("[data-glyf-theme-toggle]");
+      if (!toggle) return;
+      toggle.addEventListener("click", () => {
+        const dark = root.getAttribute("data-theme") !== "dark";
+        root.setAttribute("data-theme", dark ? "dark" : "light");
+        try { localStorage.setItem("glyf-theme", dark ? "dark" : "light"); } catch (e) {}
+      });
+    })();
+  </script>
+</body>
+</html>

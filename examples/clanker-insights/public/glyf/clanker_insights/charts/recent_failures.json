@@ -1,0 +1,28 @@
+{
+  "chart_type": "table",
+  "columns": [
+    "error",
+    "agent",
+    "failures",
+    "last_seen"
+  ],
+  "compiled_sql_path": "compiled/recent_failures.sql",
+  "height": 380,
+  "lineage": {
+    "models": {
+      "fct_agent_runs": {
+        "parents": [
+          "source:raw.agent_runs"
+        ],
+        "path": "models/fct_agent_runs.sql"
+      }
+    },
+    "sources": [
+      "raw.agent_runs"
+    ]
+  },
+  "metadata_path": "charts/recent_failures.json",
+  "name": "recent_failures",
+  "table_html_path": "charts/recent_failures.table.html",
+  "title": "Failures by cause"
+}

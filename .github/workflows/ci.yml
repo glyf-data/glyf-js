@@ -1,0 +1,32 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: npm test
+
+  # glyf's published schema must still match the copy the contract test uses,
+  # so a bundle change in glyf shows up here, not in a customer's browser.
+  schema-in-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -fsSL https://glyfdata.com/schema/bundle.v1.schema.json -o /tmp/published.json
+          diff -u contract/bundle.v1.schema.json /tmp/published.json

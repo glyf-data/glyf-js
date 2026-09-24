@@ -1,0 +1,32 @@
+{
+  "chart_type": "heatmap",
+  "color": "runs",
+  "compiled_sql_path": "compiled/runs_by_hour.sql",
+  "height": 300,
+  "interactions": [
+    "tooltip"
+  ],
+  "lineage": {
+    "models": {
+      "fct_agent_runs": {
+        "parents": [
+          "source:raw.agent_runs"
+        ],
+        "path": "models/fct_agent_runs.sql"
+      }
+    },
+    "sources": [
+      "raw.agent_runs"
+    ]
+  },
+  "metadata_path": "charts/runs_by_hour.json",
+  "name": "runs_by_hour",
+  "png_path": "charts/runs_by_hour.png",
+  "svg_path": "charts/runs_by_hour.svg",
+  "title": "When agents run",
+  "width": 1100,
+  "x": "hour",
+  "x_title": "Hour of day (UTC)",
+  "y": "weekday",
+  "y_title": "Weekday"
+}

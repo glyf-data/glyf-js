@@ -1,0 +1,8693 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300,
+      "stroke": "#d9e2ec"
+    },
+    "axis": {
+      "labelAngle": 0,
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "titleFontWeight": 600,
+      "labelFont": "Hanken Grotesk",
+      "titleFont": "Hanken Grotesk"
+    },
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "titleFontWeight": 600,
+      "labelFont": "Hanken Grotesk",
+      "titleFont": "Hanken Grotesk"
+    },
+    "title": {
+      "fontSize": 15,
+      "fontWeight": 600,
+      "subtitleFontSize": 12,
+      "subtitleFontWeight": 400,
+      "font": "Hanken Grotesk",
+      "subtitleFont": "Hanken Grotesk"
+    }
+  },
+  "data": {
+    "name": "data-a0a60ff86378a22f636854fc84862b6f"
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "color": {
+      "field": "model",
+      "type": "nominal"
+    },
+    "opacity": {
+      "condition": {
+        "param": "param_71b48305c7a3be24",
+        "value": 1
+      },
+      "value": 0.2
+    },
+    "tooltip": [
+      {
+        "bin": {
+          "maxbins": 30
+        },
+        "field": "cost_usd",
+        "type": "quantitative"
+      },
+      {
+        "aggregate": "count",
+        "type": "quantitative"
+      },
+      {
+        "field": "model",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "bin": {
+        "maxbins": 30
+      },
+      "field": "cost_usd",
+      "title": "USD",
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "count",
+      "title": "Runs",
+      "type": "quantitative"
+    }
+  },
+  "height": 400,
+  "params": [
+    {
+      "name": "param_71b48305c7a3be24",
+      "select": {
+        "type": "point",
+        "fields": [
+          "model"
+        ]
+      },
+      "bind": "legend"
+    }
+  ],
+  "title": "Cost per run",
+  "width": 800,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json",
+  "datasets": {
+    "data-a0a60ff86378a22f636854fc84862b6f": [
+      {
+        "cost_usd": 0.02629,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.02645,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.02736,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.02806,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.02884,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.02888,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0293,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.02938,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0294,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.02954,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.02962,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.02967,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.02974,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.02975,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.02991,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03021,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03043,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03046,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0305,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03052,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03057,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03068,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03078,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0309,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03092,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03095,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03098,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03102,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03102,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03104,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03106,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0311,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03114,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03118,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0312,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03132,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03135,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03149,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0317,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03177,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03179,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03184,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03204,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03208,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03209,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03214,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03216,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03218,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03238,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03242,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03248,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03251,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03254,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03256,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03268,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03274,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03275,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03277,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03279,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0328,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0328,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03282,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03283,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03285,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03288,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0329,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03295,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03296,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03298,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.033,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03303,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03305,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0331,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03312,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03315,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0332,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0332,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03321,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03331,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03332,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03341,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03343,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03345,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0335,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03366,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03366,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03366,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03367,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0337,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03375,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03376,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03376,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03377,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03379,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03384,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03386,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03389,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03393,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03396,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03396,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03404,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03404,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03406,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0341,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03412,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03413,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03416,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03421,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03427,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0343,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03432,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03433,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03439,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0344,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03442,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03446,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03448,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03449,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03452,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03454,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03454,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03457,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03458,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03463,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03463,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03463,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03464,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03467,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03472,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03473,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03476,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03481,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03483,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03483,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03483,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03484,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03487,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03488,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03492,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03494,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03497,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03498,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03499,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03502,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03504,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03506,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03507,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03507,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0351,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03518,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03518,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03521,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03522,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03522,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03523,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03525,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03526,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0353,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03531,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03532,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03538,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0354,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03542,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03544,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03547,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03547,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0355,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0355,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03554,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03556,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03556,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03556,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03557,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0356,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03563,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03565,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03566,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03568,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03574,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03579,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0358,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03581,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03582,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03582,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03582,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03583,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03584,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03585,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03587,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03588,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03589,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03592,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03592,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03595,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03596,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03599,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03604,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03612,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03622,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03624,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03627,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03628,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03628,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03633,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03633,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03633,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03634,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03637,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03641,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03642,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03642,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03642,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03646,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03647,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03648,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03655,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03657,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03657,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03659,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0366,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03662,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03668,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03668,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03669,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0367,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0367,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0367,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03672,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03673,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03676,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03677,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03677,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03678,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03683,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03683,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03684,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03687,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03688,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0369,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0369,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03692,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03698,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03699,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03699,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.037,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03704,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03707,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03708,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03709,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0371,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03712,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03714,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03716,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03716,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03719,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03722,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03723,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03725,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03727,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03728,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0373,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03731,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03731,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03732,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03733,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03735,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03735,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03737,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03744,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03745,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03745,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03745,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03746,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03746,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03746,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0375,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03752,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03753,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03754,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03755,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03757,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03758,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0376,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03762,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03762,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03766,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03767,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0377,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03771,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03771,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03772,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03773,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03774,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03774,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03774,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03776,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03776,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03777,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03777,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0378,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03781,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03782,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03784,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03785,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03786,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03787,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03789,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03789,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0379,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0379,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03793,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03796,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03796,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03796,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03796,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03798,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.038,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.038,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03801,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03802,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03803,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03803,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03805,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03808,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03808,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03809,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0381,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0381,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03812,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03814,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03814,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03815,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03816,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03816,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03818,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03818,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03819,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03822,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03823,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03824,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03825,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03827,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03828,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03829,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03829,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03834,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03835,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03835,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03836,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03836,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03838,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03838,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0384,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03841,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03844,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03845,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03845,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03845,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03847,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03848,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0385,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0385,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03851,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03854,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03856,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03856,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0386,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03862,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03862,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03865,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03865,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03866,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03867,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03868,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03868,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03869,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03869,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0387,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03871,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03874,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03876,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03877,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03877,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03879,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03881,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03883,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03886,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03888,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03892,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03894,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03897,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03903,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03904,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03904,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03904,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03905,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03908,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03908,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03912,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03914,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03916,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03917,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03919,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0392,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03921,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03922,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03923,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03926,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03929,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03931,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03938,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0394,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03943,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03944,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0395,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03952,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03956,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0396,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0396,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0396,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03961,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03962,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03962,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03962,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03963,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03966,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03966,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03968,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03972,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03972,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03973,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03974,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03975,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03976,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03976,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03982,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03984,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03984,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03984,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03985,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03986,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03988,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03988,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03989,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03992,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03994,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.03999,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04001,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04001,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04002,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04003,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04004,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04007,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04008,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0401,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04016,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04018,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04019,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04019,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04019,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0402,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0402,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04021,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04021,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04023,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04028,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04028,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0403,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0403,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04031,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04031,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04032,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04032,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04034,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04034,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04037,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0404,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04041,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04044,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04044,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04046,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04047,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04047,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0405,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0405,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04053,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04055,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0406,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04061,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04061,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04061,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04062,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04063,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04069,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04069,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0407,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04071,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04072,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04074,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04076,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04076,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04077,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04078,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04078,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04081,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04082,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04082,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04088,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04089,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0409,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0409,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04096,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04097,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04098,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04099,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04101,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04102,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04106,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04108,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0411,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04111,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04115,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04116,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04116,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04116,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04117,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04118,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04121,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04124,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04124,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04124,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04124,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04127,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04128,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0413,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0413,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04132,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04132,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04134,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04135,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04135,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04139,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04141,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04144,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04145,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04145,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04147,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04147,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04151,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04154,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04154,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04154,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04155,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04156,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04157,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04159,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04162,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04164,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04164,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04166,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04166,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04167,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04171,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04173,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04175,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04176,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04176,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04178,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04179,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04181,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04183,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04184,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04184,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04185,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04188,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0419,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04192,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04193,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04195,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04196,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04196,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04198,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04198,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04201,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04201,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04203,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04205,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04206,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04207,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04209,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04209,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04211,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04212,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04218,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04219,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04223,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04225,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04228,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04229,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04231,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04234,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04235,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04235,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04237,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04238,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04238,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04242,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04242,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04244,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04246,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04248,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04249,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04251,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04251,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04252,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04253,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04255,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04256,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04256,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04258,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0426,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04261,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04262,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04265,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0427,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0427,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0428,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04282,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04283,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04284,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04284,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04286,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04286,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04286,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04293,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04294,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04295,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04295,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04296,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04296,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04296,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04298,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.043,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.043,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04302,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04304,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04304,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04305,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04308,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04309,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04312,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04313,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04314,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04316,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04317,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04317,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04317,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04317,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04319,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0432,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04323,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04324,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04325,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04325,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04328,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04331,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04334,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04336,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04341,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0435,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04352,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04352,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04353,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04353,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04355,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04356,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04357,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04357,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0436,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0436,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0436,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04363,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04366,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04366,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04367,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04367,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04372,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04372,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04373,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04374,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04374,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04377,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04382,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04384,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04388,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04391,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04392,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04392,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04396,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04399,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.044,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.044,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.044,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04401,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04402,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04402,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04404,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04404,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04404,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04408,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04409,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0441,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04412,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04418,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04419,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04423,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04424,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04424,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04425,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04426,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04426,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04427,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04428,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04428,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04429,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04431,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04433,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04433,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04436,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04437,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0444,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04442,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04444,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04445,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04446,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04448,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04449,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04451,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04453,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04454,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04457,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04458,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04462,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04464,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0447,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04471,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04477,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04477,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04484,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04484,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04485,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04487,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04487,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04487,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0449,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04494,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04497,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.045,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04501,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04506,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04509,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0451,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04512,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04512,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04514,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04514,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04515,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04516,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04518,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04519,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0452,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04521,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04525,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04531,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04531,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04532,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04534,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04535,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04536,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04537,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04538,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04538,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04539,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04542,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04544,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04544,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04545,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04546,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04548,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04557,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04559,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04559,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04563,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04563,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04565,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04566,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04566,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04567,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04572,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04574,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04581,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04582,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04587,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04592,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04592,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04592,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04593,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04594,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04596,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04601,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04602,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04603,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04604,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04605,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04608,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0461,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04613,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04615,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0462,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04621,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04625,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04629,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0463,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04632,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04633,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04634,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04636,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04638,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0464,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04643,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04643,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04646,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04647,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04648,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0465,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04657,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04657,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04657,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04662,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04666,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04668,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04669,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04671,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04671,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04672,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04681,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04687,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04687,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0469,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04694,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04696,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04697,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04701,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04704,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04705,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04708,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04711,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04712,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04714,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04715,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04716,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0472,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04725,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04725,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04727,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04728,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04738,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0474,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04741,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04742,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04743,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04744,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04744,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04746,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04746,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04752,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04752,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04753,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04754,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04763,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04764,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04774,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04781,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04783,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04785,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04786,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04788,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0479,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04792,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04795,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04797,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04801,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04804,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04807,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04808,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04813,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04813,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04814,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04815,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04815,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04815,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04819,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04821,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04824,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04824,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04826,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04826,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04832,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04836,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04846,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04848,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04852,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04852,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04855,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04856,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04858,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0486,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04867,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04871,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04871,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04872,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04873,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04875,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0488,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04885,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04888,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04892,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04895,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04898,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04898,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04901,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04904,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04906,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04908,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04914,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04914,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04918,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04922,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04922,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04923,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04923,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04925,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04926,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04927,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04928,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04929,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04929,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04931,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04933,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04934,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04935,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04938,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04951,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04956,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04958,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04963,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04969,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0497,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04972,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04976,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04979,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0498,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04982,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04984,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04987,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04988,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04993,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.04995,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05005,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05019,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05021,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05026,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05026,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05028,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0503,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05031,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05038,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05042,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05044,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05046,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05051,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05051,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05056,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05058,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05058,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05058,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0506,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05065,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05067,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05067,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05068,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0507,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05074,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05104,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05113,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05114,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05115,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05122,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05126,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05127,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05137,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05144,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05144,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05146,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05152,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05152,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05153,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05157,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0516,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05161,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05163,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05164,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05169,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05172,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05172,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05172,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05173,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05177,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05183,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05184,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05187,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05195,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05195,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05202,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05202,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05203,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05204,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05204,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05206,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05209,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05214,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0522,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0522,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05223,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05223,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05224,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05227,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05232,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05237,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0524,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05252,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05254,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05254,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05257,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05265,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05268,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05268,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0527,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05272,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05272,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05274,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05274,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05277,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05281,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05284,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05286,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05288,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05292,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05292,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05298,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05304,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05305,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05309,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05309,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05317,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0532,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05322,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05326,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05332,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05333,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0534,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05346,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05346,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05347,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05359,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05363,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0537,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05371,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05371,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05373,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05373,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05376,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0538,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05381,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05386,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0539,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05397,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05399,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.054,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05401,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05402,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05406,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05417,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05418,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05419,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05422,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05429,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05436,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05439,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05451,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05452,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05456,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05461,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05462,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05467,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05468,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05474,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05478,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0548,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05492,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05504,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05505,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05515,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05521,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05524,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05536,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05537,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05552,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05558,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05558,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0556,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05562,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05564,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05564,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05577,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05578,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05579,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05579,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05579,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05586,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05586,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05597,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.056,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05606,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05606,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05607,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05609,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0561,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05611,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05612,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05616,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05633,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05634,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05635,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05638,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05645,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05651,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05666,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0568,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0568,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05704,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05706,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05713,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05718,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05719,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05719,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05724,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05732,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05736,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05736,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05739,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05742,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05755,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05759,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05767,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05771,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05776,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05784,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05804,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05805,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05805,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05814,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05814,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05825,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05844,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05851,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05859,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05859,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05862,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05876,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0588,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05884,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05891,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.059,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05906,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05918,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05919,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05924,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05928,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05934,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05936,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05938,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05948,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0595,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05958,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05964,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05972,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.05978,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0599,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06022,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06065,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06067,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06076,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06077,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06078,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06083,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0609,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06096,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06098,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06102,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06109,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0611,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06111,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06114,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06116,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06118,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06128,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06136,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06145,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06154,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06166,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06167,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06168,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06185,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06192,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06208,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0621,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06217,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06225,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0623,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06236,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06257,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06259,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06267,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06268,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0627,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06274,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06278,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06285,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06294,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06294,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06307,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06312,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06331,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06337,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06342,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06343,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06347,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06376,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06388,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06389,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06402,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0642,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06421,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06424,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06435,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06459,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0646,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0648,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06483,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06498,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06525,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06534,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0655,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06558,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06562,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0658,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06588,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0659,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06594,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06595,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06617,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06632,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06637,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06658,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06661,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06665,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06672,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06695,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06709,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0671,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06714,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0673,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06731,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06748,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06767,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0677,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06776,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06804,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0682,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06821,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06837,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0685,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06852,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06852,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06863,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06908,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0693,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06941,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06947,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.06974,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07014,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07022,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07041,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07074,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07075,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07085,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07087,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07091,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07098,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07137,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07146,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07162,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07164,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07181,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07207,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07254,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07258,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07269,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07314,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07328,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0738,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0741,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07425,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07456,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07464,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07464,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07465,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07469,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07531,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07569,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07644,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07667,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.077,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07754,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07788,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07796,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07809,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07901,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07918,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07931,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07936,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0795,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07955,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0796,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.07986,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0801,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.08042,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.08058,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.08078,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.08093,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.08276,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.08303,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.08336,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.08342,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.08418,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0842,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.08534,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.08539,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.08633,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.08686,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.08726,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0876,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.08857,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.089,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.08938,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.08968,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0897,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.09047,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.09054,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.09119,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.09125,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0925,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.09269,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.0928,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.09449,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.09545,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.09629,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.09716,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.09734,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.09785,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.0981,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.09812,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.09824,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.0988,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.09941,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.09952,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.09964,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.10032,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.10065,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.10128,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.10257,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.10292,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.10397,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.10514,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.10589,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.10647,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.10652,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.10682,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.10748,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.10841,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.10942,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.11069,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.11125,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.11147,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.11255,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.11294,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.11435,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.11446,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.11489,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.11555,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.11572,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.11606,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.11618,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.11901,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.11915,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.11954,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.1202,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.12086,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.12223,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.12239,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.12259,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.12305,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.12326,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.12392,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.12803,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.12809,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.12845,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.1289,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.12962,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.13037,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.13094,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.13115,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.1328,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.13478,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.13493,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.1358,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.13652,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.13652,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.13655,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.13658,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.13718,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.13772,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.13904,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.13994,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.14021,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.14111,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.14129,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.14162,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.14447,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.14591,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.14678,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.14726,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.14795,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.14849,
+        "model": "clank-mini"
+      },
+      {
+        "cost_usd": 0.14942,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.14975,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.15158,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.15203,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.1532,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.15338,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.15365,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.15527,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.15548,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.15584,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.15626,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.15629,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.15701,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.1589,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.15911,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.15995,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.16019,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.1616,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.16208,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.16268,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.16298,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.16427,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.1655,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.16589,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.16589,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.16679,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.16748,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.16769,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.16811,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.16826,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.16916,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.17093,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.17153,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.17156,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.17192,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.17195,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.17648,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.17714,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.17765,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.17768,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.17768,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.17831,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.17849,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.18098,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.1817,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.18206,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.18248,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.18263,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.18263,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.18311,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.18362,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.18458,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.18563,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.18809,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.18821,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.18824,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.18926,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.18944,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.18962,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.1925,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.19295,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.19367,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.19391,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.1946,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.19469,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.19574,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.19592,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.19628,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.19637,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.19748,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.1991,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.2003,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.20111,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.20192,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.20234,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.20315,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.20318,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.20387,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.20396,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.20426,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.20441,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.20477,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.20555,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.20594,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.20642,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.20897,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.20918,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.20945,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.20999,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.21104,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.2123,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.21266,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.21332,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.21389,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.21512,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.21557,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.21617,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.21632,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.21644,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.21653,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.2174,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.21755,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.21878,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.21917,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.21947,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.22136,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.22238,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.22301,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.2237,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.22568,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.22781,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.22901,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.22982,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.2309,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.23147,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.2324,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.23306,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.23366,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.23465,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.23477,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.23516,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.23708,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.23738,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.23972,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.23984,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.2399,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.24044,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.2405,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.24065,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.24473,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.245,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.2453,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.24632,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.24842,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.25121,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.25349,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.25364,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.25523,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.25619,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.25652,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.25679,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.25715,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.25766,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.26024,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.26099,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.26144,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.26165,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.26225,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.26297,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.26483,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.26495,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.26501,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.26513,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.26729,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.26768,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.26861,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.26948,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.27023,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.27023,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.27023,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.27089,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.2723,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.27407,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.27506,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.27515,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.27599,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.2762,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.2762,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.27665,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.27839,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.27854,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.27947,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.27995,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.28016,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.28079,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.28121,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.28217,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.28235,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.28262,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.28604,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.28958,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.29135,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.29717,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.29819,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.3017,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.30206,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.3023,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.30314,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.30467,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.30506,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.30563,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.30572,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.30575,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.30614,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.30713,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.30758,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.3113,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.31244,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.31457,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.31484,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.31496,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.31643,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.31658,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.31673,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.31703,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.31862,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.31901,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.31919,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.31976,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.32099,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.32135,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.32219,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.32282,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.32312,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.32345,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.32387,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.32426,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.32561,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.32792,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.32852,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.33035,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.33038,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.33089,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.33173,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.33188,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.33218,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.33275,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.33344,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.33611,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.33668,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.3374,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.33821,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.33923,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.34115,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.34133,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.34232,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.34298,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.34478,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.34484,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.34574,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.34607,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.34817,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.34949,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.35414,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.35582,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.35597,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.35687,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.35774,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.3581,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.35846,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.35861,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.35879,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.35939,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.36092,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.36197,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.36596,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.36713,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.36821,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.36995,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.37349,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.37439,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.37481,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.37697,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.37706,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.37994,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.38147,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.38426,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.38783,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.38843,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.38885,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.38936,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.38975,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.39017,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.39116,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.39212,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.39305,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.39692,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.39776,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.39926,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.39947,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.39989,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.40085,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.40766,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.40793,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.41015,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.41192,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.41834,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.42116,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.42533,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.42746,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.43022,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.43031,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.43049,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.43118,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.43355,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.43754,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.43757,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.43916,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.43967,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.44024,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.44078,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.44522,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.449,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.44987,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.45071,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.45203,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.45206,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.4553,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.46091,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.46163,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.46589,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.46667,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.47,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.47063,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.4724,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.47804,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.4805,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.48272,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.48539,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.48728,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.48773,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.48998,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.49229,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.49463,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.49532,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.49622,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.49649,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.49907,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.50693,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.50888,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.50924,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.50936,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.51647,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.51974,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.51986,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.52154,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.53198,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.53258,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.53309,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.53888,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.545,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.54713,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.55049,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.55274,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.55277,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.56363,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.56453,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.56522,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.56672,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.56984,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.57083,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.57251,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.57329,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.5735,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.57359,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.57617,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.57683,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.57818,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.58535,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.58547,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.59546,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.60038,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.60134,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.60263,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.60458,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.60656,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.60974,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.60986,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.61667,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.61778,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.61826,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.61985,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.62276,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.62891,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.63026,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.64322,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.64436,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.64487,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.64607,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.65525,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.6575,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.65813,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.66212,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.66296,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.66677,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.6689,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.6692,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.6707,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.67688,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.68057,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.68717,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.68786,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.69608,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.70151,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.70214,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.70367,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.71429,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.71615,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.73001,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.73151,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.73196,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.73208,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.7331,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.73607,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.73751,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.74204,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.74264,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.74438,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.74885,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.74969,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.755,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.758,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.7595,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.75992,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.7637,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.76421,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.76583,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.76805,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.76937,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.76967,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.77063,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.7709,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.78437,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.78743,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.79331,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.80156,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.80663,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.81014,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.81164,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.818,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.82046,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.82313,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.82316,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.824,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.83693,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.8384,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.83987,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.84275,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.84551,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.84581,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.84788,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.85049,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.8585,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.86111,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.86258,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.86966,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.8729,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.87584,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.87701,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.88064,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.88688,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.88823,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.89369,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.89759,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.90386,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.91139,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.92531,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.93209,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.94226,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.94364,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.95018,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.96509,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.96875,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.98798,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.99263,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.99281,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.99323,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.99329,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.99596,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.99968,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 0.99974,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.00025,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.00694,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.01099,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.01513,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.01609,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.02878,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.0301,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.03229,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.03388,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.04585,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.05467,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.05527,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.06031,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.06925,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.07714,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.08524,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.08824,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.09484,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.09796,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.09805,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.11914,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.12379,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.14848,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.15511,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.16966,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.18028,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.18772,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.20005,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.20692,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.2167,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.21781,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.2227,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.23122,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.24268,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.2593,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.26704,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.29116,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.35149,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.35413,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.35848,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.36436,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.37402,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.38377,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.38848,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.39952,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.40081,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.40678,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.41842,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.42508,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.42568,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.43204,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.45172,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.45211,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.45868,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.4606,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.47113,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.4903,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.50458,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.50659,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.51097,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.52558,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.52804,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.565,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.577,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.58492,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.58948,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.60364,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.60727,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.60868,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.61288,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.62956,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.63424,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.6418,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.67525,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.67858,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.7018,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.70522,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.71632,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.72436,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.73996,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.76228,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.78916,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.79108,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.79306,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.79852,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.80308,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.80488,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.80728,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.8182,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.83488,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.83554,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.83821,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.84196,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.84688,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.85756,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.86728,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.87178,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.87736,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.88072,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.88732,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.8956,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.89584,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.89836,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.90676,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 1.92296,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.92704,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.92704,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.9376,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.95788,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.96568,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.97024,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.97672,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 1.98272,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.021,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.02412,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.03276,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.05232,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.05496,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.06168,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.06444,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.07536,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.08124,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.0996,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.10188,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.10548,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.11448,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.117,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.11844,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.13572,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.14268,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.15444,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.17604,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.17964,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.18204,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.2112,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.2208,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.22236,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.23952,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.24672,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.24768,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.25176,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.26316,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.26784,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.26868,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.27096,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.27756,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.28596,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.29208,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 2.29244,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.29676,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.31956,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.321,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.3258,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.3312,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.33516,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.33732,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.34368,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.34788,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.37164,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.3816,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.38484,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.38856,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.39732,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.4278,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.43992,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.4584,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.49596,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.49884,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.51084,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.5166,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.52632,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.53304,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.53592,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.53859,
+        "model": "clank-pro"
+      },
+      {
+        "cost_usd": 2.54084,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.5652,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.57,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.59568,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.60828,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.6096,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.62112,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.62424,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.63624,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.64008,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.64308,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.66792,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.66804,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.67692,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.68484,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.69048,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.693,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.70032,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.71076,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.71496,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.71976,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.74736,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.75972,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.76596,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.77316,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.77664,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.77808,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.7788,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.78516,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.80184,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.80592,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.81012,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.81132,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.81204,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.81264,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.813,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.81552,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.83784,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.85848,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.87732,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.8862,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.9294,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.93084,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.9648,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.97524,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.9792,
+        "model": "clank-ultra"
+      },
+      {
+        "cost_usd": 2.98388,
+        "model": "clank-ultra"
+      }
+    ]
+  }
+}

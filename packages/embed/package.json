@@ -1,0 +1,33 @@
+{
+  "name": "@glyf/embed",
+  "version": "0.1.0",
+  "description": "Draw glyf charts live in any web page: interactive charts, KPI tiles, tables and filters from a glyf bundle.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && cp src/style.css dist/style.css",
+    "test": "vitest run"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@glyf/client": "file:../client",
+    "vega": "^6.1.2",
+    "vega-embed": "^7.0.2",
+    "vega-lite": "^6.4.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
