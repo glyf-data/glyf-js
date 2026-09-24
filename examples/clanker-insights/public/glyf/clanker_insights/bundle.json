@@ -286,7 +286,7 @@
         "recent_failures",
         "runs_by_hour"
       ],
-      "description": "What Acme Logistics' agents did on Clanker over the last six weeks.",
+      "description": "What Glyf Data's agents did on Clanker over the last six weeks.",
       "filters": [
         {
           "control": "select",
@@ -328,7 +328,7 @@
       "title": "Platform Insights"
     }
   },
-  "generated_at": "2026-09-24T22:27:07Z",
+  "generated_at": "2026-09-24T22:47:29Z",
   "glyf_version": "0.17.0",
   "mode": "public_site",
   "paths": {
