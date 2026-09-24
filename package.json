@@ -10,13 +10,18 @@
   ],
   "scripts": {
     "build": "npm run build --workspaces",
-    "dev:demo": "npm run build --workspace @glyf/client && npm run build --workspace @glyf/react && npm run dev --workspace @glyf/example-startup-saas",
-    "build:demo": "npm run build --workspace @glyf/client && npm run build --workspace @glyf/react && npm run build --workspace @glyf/example-startup-saas",
-    "preview:demo": "npm run preview --workspace @glyf/example-startup-saas"
+    "test": "vitest run",
+    "dev:demo": "npm run build --workspace @glyf/client --workspace @glyf/embed --workspace @glyf/react && npm run dev --workspace @glyf/example-clanker-insights",
+    "build:demo": "npm run build --workspace @glyf/client --workspace @glyf/embed --workspace @glyf/react && npm run build --workspace @glyf/example-clanker-insights",
+    "preview:demo": "npm run preview --workspace @glyf/example-clanker-insights",
+    "deploy:demo": "npm run build:demo && cd examples/clanker-insights && npx wrangler@4 deploy"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.1.1",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
     "typescript": "^5.9.3",
-    "vite": "^7.2.7"
+    "vite": "^7.2.7",
+    "vitest": "^5.0.1"
   }
 }

@@ -5,6 +5,10 @@ export interface GlyfSecurity {
   browser_visible_data?: string;
   internal_artifacts_included?: boolean;
   internal_artifacts?: string[];
+  /** `"minimal"` or `"excluded"` when the site publishes fewer rows. */
+  row_data?: "minimal" | "excluded" | string;
+  /** True when the site was exported with `export.embed`: Vega specs are published. */
+  embedded_specs?: boolean;
 }
 
 export interface GlyfChartArtifacts {
@@ -14,6 +18,10 @@ export interface GlyfChartArtifacts {
   compiled_sql?: string | null;
   data?: string | null;
   vega?: string | null;
+  /** Tables only: the `<table>` fragment. */
+  table?: string | null;
+  /** KPIs only: the tile fragment. */
+  kpi?: string | null;
 }
 
 export interface GlyfChart {
@@ -22,6 +30,9 @@ export interface GlyfChart {
   fields?: {
     x?: string | null;
     y?: string | null;
+    columns?: string[] | null;
+    value?: string | null;
+    compare?: string | null;
   };
   artifacts: GlyfChartArtifacts;
   interactions?: string[];
@@ -35,8 +46,18 @@ export interface GlyfDashboard {
   chart_theme?: string | null;
   tags?: string[];
   charts?: string[];
-  filters?: Array<Record<string, unknown>>;
+  filters?: GlyfDashboardFilter[];
   source?: string | null;
+}
+
+export type GlyfFilterControl = "select" | "radio" | "toggle";
+
+export interface GlyfDashboardFilter {
+  field: string;
+  values: string[];
+  /** How the dashboard draws it. Absent in bundles older than glyf 0.18. */
+  control?: GlyfFilterControl;
+  source?: { chart: string; field: string };
 }
 
 export interface GlyfBundle {
@@ -124,12 +145,30 @@ export class GlyfClient {
   }
 
   async chartMetadata(name: string): Promise<Record<string, unknown> | undefined> {
-    const url = this.chartArtifactUrl(name, "metadata");
+    return this.fetchArtifactJson<Record<string, unknown>>(name, "metadata");
+  }
+
+  /** An artifact parsed as JSON, or undefined when the bundle has none. */
+  async fetchArtifactJson<T = unknown>(
+    name: string,
+    kind: GlyfArtifactKind,
+  ): Promise<T | undefined> {
+    const url = this.chartArtifactUrl(name, kind);
     if (!url) {
       return undefined;
     }
     const response = await request(url, this.options);
-    return response.json() as Promise<Record<string, unknown>>;
+    return response.json() as Promise<T>;
+  }
+
+  /** An artifact as text, or undefined when the bundle has none. */
+  async fetchArtifactText(name: string, kind: GlyfArtifactKind): Promise<string | undefined> {
+    const url = this.chartArtifactUrl(name, kind);
+    if (!url) {
+      return undefined;
+    }
+    const response = await request(url, this.options);
+    return response.text();
   }
 }
 
@@ -152,12 +191,21 @@ export function resolveBundleUrl(bundleUrl: string, artifactPath: string): strin
   return new URL(artifactPath, absoluteBundleUrl).toString();
 }
 
+/** The bundle versions this client reads. */
+export const SUPPORTED_BUNDLE_VERSIONS = ["1"];
+
 function validateBundle(bundle: GlyfBundle, bundleUrl: string): void {
   if (!bundle || typeof bundle !== "object") {
     throw new Error(`Invalid Glyf bundle at ${bundleUrl}`);
   }
   if (!bundle.bundle_version) {
     throw new Error(`Glyf bundle is missing bundle_version: ${bundleUrl}`);
+  }
+  if (!SUPPORTED_BUNDLE_VERSIONS.includes(bundle.bundle_version)) {
+    // The contract says a consumer that does not know the version stops.
+    throw new Error(
+      `Glyf bundle version ${bundle.bundle_version} is not supported by this client: ${bundleUrl}`,
+    );
   }
   if (!bundle.charts || typeof bundle.charts !== "object") {
     throw new Error(`Glyf bundle is missing charts: ${bundleUrl}`);

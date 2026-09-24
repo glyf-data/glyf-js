@@ -1,55 +1,45 @@
-# Examples
+# The Clanker demo
 
-The first example app is:
+`examples/clanker-insights` is a customer-facing analytics page for Clanker, a
+made-up platform where companies run AI agents. It shows one customer
+workspace, Glyf Data, what its five agents did over six weeks: runs,
+success, run time, spend by model and agent, and failures. Every chart comes
+from glyf.
 
-```text
-examples/startup-saas
-```
+The charts are defined in the glyf repository, in
+`examples/clanker_insights`: synthetic seeds, dbt models, 13 `.ggsql` charts
+and the dashboard whose filters the page reuses.
 
-It demonstrates a startup SaaS dashboard UI that consumes a copied Glyf product
-analytics bundle from:
-
-```text
-examples/startup-saas/public/glyf/product_analytics/bundle.json
-```
-
-## Run the Demo
+## Run it
 
 ```bash
 npm install
 npm run dev:demo
 ```
 
-Open the Vite URL printed in the terminal.
-
-## Build the Demo
+## Rebuild the charts
 
 ```bash
-npm run build:demo
+cd ../glyf/examples/clanker_insights
+uv run dbt seed --profiles-dir . && uv run dbt build --profiles-dir .
+uv run glyf build
+cd ../../../glyf-js/examples/clanker-insights
+npm run sync:bundle      # copies target/glyf/site into public/glyf/clanker_insights
 ```
 
-The built app includes the copied Glyf public artifacts under:
+The page does not change as long as the chart names stay the same.
 
-```text
-examples/startup-saas/dist/glyf/product_analytics/
-```
+## Live
 
-## Replace the Sample Bundle
+[clanker.glyfdata.com](https://clanker.glyfdata.com)
 
-From the main Glyf repository, build an example:
+## Deploy
 
 ```bash
-cd ../glyf
-uv run glyf build --project-dir examples/product_analytics
+npm run deploy:demo      # builds, then deploys the Worker glyf-clanker-demo to clanker.glyfdata.com
 ```
 
-Then replace the demo public bundle:
-
-```bash
-cd ../glyf-js
-cp -R ../glyf/examples/product_analytics/target/glyf/site/. \
-  examples/startup-saas/public/glyf/product_analytics/
-```
-
-The React app does not need to change as long as the chart names remain the
-same.
+Each company demo is its own Worker on its own `glyfdata.com` subdomain: copy
+`wrangler.jsonc`, change `name` and the `routes` pattern, and deploy. Cloudflare
+creates the DNS record and certificate. Keep to one level under
+`glyfdata.com`; the free certificate does not cover `a.b.glyfdata.com`.

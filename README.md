@@ -1,84 +1,90 @@
-# Glyf JS
+# glyf-js
 
-Experimental JavaScript packages for consuming Glyf artifact bundles.
+Put [glyf](https://github.com/glyf-data/glyf) charts inside your own product:
+live, themed and filterable, from the static site a glyf build writes.
 
-The Python/Rust `glyf` CLI remains the artifact producer:
-
-```bash
-dbt build
-glyf build
-```
-
-That produces a public artifact site:
+The charts are defined as SQL in a dbt project, and `glyf build` renders them
+and writes a site with a `bundle.json` manifest. glyf-js reads that manifest and
+draws the charts in the browser. There is no server and no query at runtime.
 
 ```text
-target/glyf/site/
-  bundle.json
-  charts/
-  dashboards/
-  compiled/
-  assets/
+dbt project + .ggsql charts --glyf build--> target/glyf/site/bundle.json --glyf-js--> your app
 ```
 
-This workspace consumes that bundle:
+**See it live:** [clanker.glyfdata.com](https://clanker.glyfdata.com), a customer-facing
+analytics page for a made-up AI agent platform, drawn entirely with
+`@glyf/react` ([source](examples/clanker-insights)).
+
+## Packages
+
+| Package | What it does |
+| --- | --- |
+| [`@glyf/embed`](docs/embed.md) | The core, with no framework. Mounts a chart into any element: interactive charts from the bundle's Vega specs, KPI tiles, tables, and filter controls that drive them. Light and dark themes, your palette and font. |
+| [`@glyf/react`](docs/react.md) | React components over `@glyf/embed`: `GlyfProvider`, `GlyfChart`, `GlyfFilters`, `useGlyfFilters`. |
+| [`@glyf/client`](docs/client.md) | Loads and checks `bundle.json`, and resolves artifact URLs. Both of the above use it. |
+
+The packages are not on npm yet; they build from this repository.
+
+## Quick start
+
+In the glyf project, publish the Vega specs so charts can be drawn live:
+
+```yaml title="glyf.yml"
+export:
+  embed: true
+```
+
+Build it, and serve `target/glyf/site/` beside your app. Then:
 
 ```tsx
-import { GlyfProvider, GlyfChart } from "@glyf/react";
+import "@glyf/embed/style.css";
+import { GlyfChart, GlyfFilters, GlyfProvider } from "@glyf/react";
 
-export function Analytics() {
+export function Insights() {
   return (
-    <GlyfProvider bundleUrl="/glyf/product_analytics/bundle.json">
-      <GlyfChart name="activation_by_plan" />
+    <GlyfProvider bundleUrl="/glyf/bundle.json" theme="dark">
+      <GlyfFilters dashboard="insights" />
+      <GlyfChart name="spend_by_model" />
+      <GlyfChart name="runs_this_week" />
     </GlyfProvider>
   );
 }
 ```
 
-## Packages
+Without React:
 
-- `@glyf/client`: loads `bundle.json`, resolves chart/dashboard artifact URLs, and fetches chart metadata.
-- `@glyf/react`: React provider and components built on top of `@glyf/client`.
-- `@glyf/example-startup-saas`: demo app that loads a copied product analytics bundle from `public/glyf/product_analytics`.
+```ts
+import "@glyf/embed/style.css";
+import { createGlyf } from "@glyf/embed";
+
+const glyf = await createGlyf({ bundleUrl: "/glyf/bundle.json", theme: "dark" });
+glyf.mountFilters(document.querySelector("#filters")!, "insights");
+glyf.mount(document.querySelector("#spend")!, "spend_by_model");
+```
+
+## The contract
+
+`bundle.json` is the interface between glyf and glyf-js, versioned by
+`bundle_version`. glyf publishes its JSON Schema at
+[glyfdata.com/schema/bundle.v1.schema.json](https://glyfdata.com/schema/bundle.v1.schema.json);
+`contract/` holds a copy, and CI checks the copy against the published schema
+and checks the demo's real bundle against it. A client refuses a
+`bundle_version` it does not know rather than guess.
+
+## Develop
+
+```bash
+npm install
+npm run build        # every package and the demo
+npm test             # unit tests and the contract test
+npm run dev:demo     # the Clanker demo on a local Vite server
+```
 
 ## Docs
 
 - [Overview](docs/overview.md)
-- [@glyf/client](docs/client.md)
+- [@glyf/embed](docs/embed.md)
 - [@glyf/react](docs/react.md)
-- [Examples](docs/examples.md)
+- [@glyf/client](docs/client.md)
+- [The Clanker demo](docs/examples.md)
 - [Vite and Next.js](docs/vite-next.md)
-
-## Local Demo
-
-```bash
-npm install
-npm run dev:demo
-```
-
-The demo loads:
-
-```text
-examples/startup-saas/public/glyf/product_analytics/bundle.json
-```
-
-This is the same shape a real app would load from Cloudflare Pages, R2, S3,
-CloudFront, or an internal static file service.
-
-## Documentation Boundary
-
-Keep artifact generation docs in the main Glyf documentation:
-
-- how `glyf build` and `glyf export` produce `bundle.json`
-- how to publish `target/glyf/site` to S3, R2, Cloudflare Pages, or an app public folder
-- a short embedded analytics quickstart using `@glyf/react`
-
-Keep JavaScript package docs in this repository:
-
-- `@glyf/client` API
-- `@glyf/react` components and hooks
-- example React applications
-- framework-specific notes for Vite, Next.js, Remix, and similar app stacks
-
-## License
-
-MIT

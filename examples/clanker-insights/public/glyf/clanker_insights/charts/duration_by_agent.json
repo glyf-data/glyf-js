@@ -1,0 +1,29 @@
+{
+  "chart_type": "boxplot",
+  "compiled_sql_path": "compiled/duration_by_agent.sql",
+  "interactions": [
+    "tooltip"
+  ],
+  "lineage": {
+    "models": {
+      "fct_agent_runs": {
+        "parents": [
+          "source:raw.agent_runs"
+        ],
+        "path": "models/fct_agent_runs.sql"
+      }
+    },
+    "sources": [
+      "raw.agent_runs"
+    ]
+  },
+  "metadata_path": "charts/duration_by_agent.json",
+  "name": "duration_by_agent",
+  "png_path": "charts/duration_by_agent.png",
+  "svg_path": "charts/duration_by_agent.svg",
+  "title": "Run time by agent",
+  "x": "agent",
+  "x_title": "Agent",
+  "y": "duration_s",
+  "y_title": "Seconds"
+}

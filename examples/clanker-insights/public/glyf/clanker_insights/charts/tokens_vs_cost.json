@@ -1,0 +1,31 @@
+{
+  "chart_type": "scatter",
+  "color": "model",
+  "compiled_sql_path": "compiled/tokens_vs_cost.sql",
+  "interactions": [
+    "tooltip",
+    "zoom"
+  ],
+  "lineage": {
+    "models": {
+      "fct_agent_runs": {
+        "parents": [
+          "source:raw.agent_runs"
+        ],
+        "path": "models/fct_agent_runs.sql"
+      }
+    },
+    "sources": [
+      "raw.agent_runs"
+    ]
+  },
+  "metadata_path": "charts/tokens_vs_cost.json",
+  "name": "tokens_vs_cost",
+  "png_path": "charts/tokens_vs_cost.png",
+  "svg_path": "charts/tokens_vs_cost.svg",
+  "title": "Tokens and cost per run",
+  "x": "tokens",
+  "x_title": "Tokens",
+  "y": "cost_usd",
+  "y_title": "USD"
+}

@@ -37,24 +37,21 @@ export function AnalyticsPanel() {
 
 ## Package Split
 
-- `@glyf/client` loads `bundle.json`, validates the basic shape, lists charts
-  and dashboards, and resolves artifact URLs.
-- `@glyf/react` provides React components and hooks built on top of
-  `@glyf/client`.
-- `@glyf/example-startup-saas` demonstrates how a product app can consume a
-  copied Glyf bundle from its `public/` folder.
+- `@glyf/client` loads `bundle.json`, refuses a `bundle_version` it does not
+  know, lists charts and dashboards, and resolves artifact URLs.
+- `@glyf/embed` draws charts into any element: Vega from the bundle's
+  published specs, KPI tiles, tables, and filter controls that drive them.
+- `@glyf/react` mounts `@glyf/embed` from React components and hooks.
+- `@glyf/example-clanker-insights` is a customer-facing page built with them.
 
-## Current Rendering Mode
+## Rendering
 
-The first version renders exported SVG/PNG chart artifacts directly through an
-image element.
+A drawn chart is rendered live with Vega when the glyf project publishes its
+spec (`export.embed: true`), so it has tooltips and follows the page's theme,
+palette and filters. Without a spec it falls back to the SVG glyf rendered.
+Tables and KPI tiles are the HTML fragments glyf built.
 
-This keeps the public embed path simple:
-
-- no Vega runtime required
-- no normalized data exposed by default
-- no BI server required
-- works with plain static hosting
-
-Future modes can add Vega rendering, filter-aware artifacts, signed URLs, and
-cloud-mediated access control.
+Everything is static files: no BI server, no query at runtime, any static
+host. A published spec carries the chart's rows; use `export.row_data: minimal`
+to publish only the columns each chart encodes, or a per-customer build when
+each customer should see only their own rows.

@@ -1,94 +1,55 @@
 # @glyf/react
 
-`@glyf/react` provides React components and hooks for rendering charts from a
-Glyf bundle.
-
-## Install
-
-```bash
-npm install @glyf/client @glyf/react
-```
-
-## Provider
-
-Wrap the analytics area with `GlyfProvider`:
+React components over [`@glyf/embed`](embed.md). The core draws, filters and
+themes; these components mount it and follow their props.
 
 ```tsx
-import { GlyfProvider } from "@glyf/react";
+import "@glyf/embed/style.css";
+import { GlyfChart, GlyfFilters, GlyfProvider, useGlyfFilters } from "@glyf/react";
 
-export function App() {
+export function Insights({ theme }: { theme: "light" | "dark" }) {
   return (
-    <GlyfProvider bundleUrl="/glyf/product_analytics/bundle.json">
-      <AnalyticsPanel />
+    <GlyfProvider
+      bundleUrl="/glyf/clanker_insights/bundle.json"
+      theme={theme}
+      palette={["#3B6E9C", "#D99A1E", "#4F8A5B"]}
+      loading={<p>Loading charts.</p>}
+      error={(error) => <p>Charts could not be loaded: {error.message}</p>}
+    >
+      <GlyfFilters dashboard="insights" />
+      <GlyfChart name="spend_by_model" height={280} />
+      <GlyfChart name="recent_failures" />
     </GlyfProvider>
   );
 }
 ```
 
-`GlyfProvider` loads `bundle.json` once and exposes a `GlyfClient` to child
-components.
+## `GlyfProvider`
 
-## Chart Component
+Loads the bundle once and shares one `Glyf` instance, with its filters and
+theme, with everything inside it. Takes every [`createGlyf`
+option](embed.md#api) plus `loading` and `error`. Changing `theme` redraws
+the charts; changing `bundleUrl` loads a new bundle.
 
-Render a chart by name:
+## `GlyfChart`
 
-```tsx
-import { GlyfChart } from "@glyf/react";
+| Prop | Meaning |
+| --- | --- |
+| `name` | The chart, by its `.ggsql` file name. |
+| `height` | Pixels; the chart's own otherwise. The width follows the container. |
+| `showTitle` | Keep the chart's own title in the drawing. |
+| `palette` | Colours for this chart only, such as green, amber and red for outcomes. |
+| `className`, `style` | On the wrapping element. |
+| `onState` | Called with `ready`, `unfiltered`, `empty` or `error`. |
 
-export function AnalyticsPanel() {
-  return <GlyfChart name="activation_by_plan" />;
-}
-```
+## `GlyfFilters`
 
-By default, `GlyfChart` prefers the exported SVG artifact and falls back to PNG.
-
-```tsx
-<GlyfChart
-  name="activation_by_plan"
-  artifact="png"
-  showTitle={false}
-  className="chart-card"
-  imageClassName="chart-image"
-/>
-```
+Draws a dashboard's filters (`dashboard="insights"`) as the dashboard YAML sets
+them: a select, radio buttons or toggles.
 
 ## Hooks
 
-Use `useGlyfClient` when you need direct access to the client:
-
-```tsx
-import { useGlyfClient } from "@glyf/react";
-
-export function ChartCount() {
-  const client = useGlyfClient();
-  return <span>{client.listCharts().length} charts</span>;
-}
-```
-
-Use `useGlyfChart` to read one chart definition from the bundle:
-
-```tsx
-import { useGlyfChart } from "@glyf/react";
-
-export function ChartTitle() {
-  const chart = useGlyfChart("activation_by_plan");
-  return <h2>{chart?.title}</h2>;
-}
-```
-
-## Loading and Error States
-
-```tsx
-<GlyfProvider
-  bundleUrl="/glyf/product_analytics/bundle.json"
-  loading={<div>Loading analytics...</div>}
-  error={(error) => <div>{error.message}</div>}
->
-  <AnalyticsPanel />
-</GlyfProvider>
-```
-
-## Current Limitations
-
-The current implementation renders exported SVG/PNG images. It does not yet
-render Vega specs, apply runtime filters, or execute SQL in the browser.
+- `useGlyfFilters()`: the active filters, re-rendering when they change.
+- `useGlyf()`: the `Glyf` instance, for `setFilter`, `clearFilters`, `setTheme`.
+- `useGlyfChart(name)`: the chart's bundle entry, for its title and type.
+- `useGlyfClient()`: the underlying `GlyfClient`.

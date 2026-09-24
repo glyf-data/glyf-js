@@ -1,0 +1,31 @@
+{
+  "chart_type": "histogram",
+  "color": "model",
+  "compiled_sql_path": "compiled/run_cost_distribution.sql",
+  "interactions": [
+    "tooltip",
+    "legend_filter"
+  ],
+  "lineage": {
+    "models": {
+      "fct_agent_runs": {
+        "parents": [
+          "source:raw.agent_runs"
+        ],
+        "path": "models/fct_agent_runs.sql"
+      }
+    },
+    "sources": [
+      "raw.agent_runs"
+    ]
+  },
+  "metadata_path": "charts/run_cost_distribution.json",
+  "name": "run_cost_distribution",
+  "png_path": "charts/run_cost_distribution.png",
+  "svg_path": "charts/run_cost_distribution.svg",
+  "title": "Cost per run",
+  "x": "cost_usd",
+  "x_title": "USD",
+  "y": null,
+  "y_title": "Runs"
+}

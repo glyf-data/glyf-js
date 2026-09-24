@@ -1,0 +1,31 @@
+{
+  "chart_type": "line",
+  "color": "agent",
+  "compiled_sql_path": "compiled/weekly_success_by_agent.sql",
+  "interactions": [
+    "tooltip",
+    "legend_filter"
+  ],
+  "lineage": {
+    "models": {
+      "fct_agent_runs": {
+        "parents": [
+          "source:raw.agent_runs"
+        ],
+        "path": "models/fct_agent_runs.sql"
+      }
+    },
+    "sources": [
+      "raw.agent_runs"
+    ]
+  },
+  "metadata_path": "charts/weekly_success_by_agent.json",
+  "name": "weekly_success_by_agent",
+  "png_path": "charts/weekly_success_by_agent.png",
+  "svg_path": "charts/weekly_success_by_agent.svg",
+  "title": "Success rate by agent",
+  "x": "week",
+  "x_title": "Week",
+  "y": "success_rate",
+  "y_title": "Succeeded (%)"
+}
