@@ -32,5 +32,5 @@ The page does not change as long as the chart names stay the same.
 ## Deploy
 
 ```bash
-npm run deploy:demo      # builds and deploys to the Cloudflare Pages project glyf-clanker-demo
+npm run deploy:demo      # builds, then deploys the Worker glyf-clanker-demo (examples/clanker-insights/wrangler.jsonc)
 ```
