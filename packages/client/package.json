@@ -1,6 +1,6 @@
 {
   "name": "@glyf-data/client",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Load a glyf bundle.json and resolve its chart and dashboard artifacts.",
   "keywords": [
     "glyf",
@@ -21,7 +21,8 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
     }
   },
   "files": [
