@@ -1,4 +1,4 @@
-// @glyf/embed: draw glyf charts live in any page, with no framework.
+// @glyf-data/embed: draw glyf charts live in any page, with no framework.
 //
 //   const glyf = await createGlyf({ bundleUrl: "/glyf/bundle.json", theme: "dark" });
 //   glyf.mount(document.querySelector("#spend"), "spend_by_model");
@@ -16,13 +16,13 @@ import {
   type GlyfClientOptions,
   type GlyfDashboardFilter,
   type GlyfFilterControl,
-} from "@glyf/client";
+} from "@glyf-data/client";
 import embed, { type Result } from "vega-embed";
 
 import { hasRows, prepareSpec, specColumns, type ActiveFilter, type GlyfTheme } from "./spec.js";
 
 export { filterExpression, prepareSpec, specColumns, type ActiveFilter, type GlyfTheme } from "./spec.js";
-export { GlyfClient } from "@glyf/client";
+export { GlyfClient } from "@glyf-data/client";
 
 export interface GlyfOptions extends GlyfClientOptions {
   bundleUrl: string;

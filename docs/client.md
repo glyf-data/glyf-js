@@ -1,18 +1,18 @@
-# @glyf/client
+# @glyf-data/client
 
-`@glyf/client` is the low-level package for loading and resolving Glyf artifact
+`@glyf-data/client` is the low-level package for loading and resolving Glyf artifact
 bundles.
 
 ## Install
 
 ```bash
-npm install @glyf/client
+npm install @glyf-data/client
 ```
 
 ## Load a Bundle
 
 ```ts
-import { GlyfClient } from "@glyf/client";
+import { GlyfClient } from "@glyf-data/client";
 
 const client = await GlyfClient.load({
   bundleUrl: "/glyf/product_analytics/bundle.json",

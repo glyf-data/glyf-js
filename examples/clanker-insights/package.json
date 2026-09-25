@@ -1,5 +1,5 @@
 {
-  "name": "@glyf/example-clanker-insights",
+  "name": "@glyf-data/example-clanker-insights",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
@@ -11,8 +11,8 @@
     "preview": "vite preview --host 127.0.0.1"
   },
   "dependencies": {
-    "@glyf/embed": "file:../../packages/embed",
-    "@glyf/react": "file:../../packages/react",
+    "@glyf-data/embed": "0.1.0",
+    "@glyf-data/react": "0.1.0",
     "react": "^19.2.1",
     "react-dom": "^19.2.1"
   },

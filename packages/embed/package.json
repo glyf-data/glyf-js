@@ -1,7 +1,22 @@
 {
-  "name": "@glyf/embed",
+  "name": "@glyf-data/embed",
   "version": "0.1.0",
   "description": "Draw glyf charts live in any web page: interactive charts, KPI tiles, tables and filters from a glyf bundle.",
+  "keywords": [
+    "glyf",
+    "dbt",
+    "embedded-analytics",
+    "charts",
+    "vega",
+    "dashboard"
+  ],
+  "homepage": "https://github.com/glyf-data/glyf-js/tree/main/packages/embed#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glyf-data/glyf-js.git",
+    "directory": "packages/embed"
+  },
+  "bugs": "https://github.com/glyf-data/glyf-js/issues",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -14,20 +29,24 @@
   "sideEffects": [
     "*.css"
   ],
-  "scripts": {
-    "build": "tsc -p tsconfig.json && cp src/style.css dist/style.css",
-    "test": "vitest run"
-  },
   "files": [
     "dist"
   ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && cp src/style.css dist/style.css",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
   "dependencies": {
-    "@glyf/client": "file:../client",
+    "@glyf-data/client": "0.1.0",
     "vega": "^6.1.2",
     "vega-embed": "^7.0.2",
     "vega-lite": "^6.4.1"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

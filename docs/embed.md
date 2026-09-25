@@ -1,11 +1,11 @@
-# @glyf/embed
+# @glyf-data/embed
 
 The framework-free core. It mounts glyf charts into elements you give it and
 keeps them in step with one set of filters and one theme.
 
 ```ts
-import "@glyf/embed/style.css";
-import { createGlyf } from "@glyf/embed";
+import "@glyf-data/embed/style.css";
+import { createGlyf } from "@glyf-data/embed";
 
 const glyf = await createGlyf({
   bundleUrl: "/glyf/clanker_insights/bundle.json",
@@ -61,7 +61,7 @@ not. `chart.state` and the element's `data-glyf-state` attribute say which.
 
 ## Styling
 
-`@glyf/embed/style.css` styles the tiles, tables, filters and marks from CSS
+`@glyf-data/embed/style.css` styles the tiles, tables, filters and marks from CSS
 variables. Set them on any ancestor to restyle:
 
 ```css

@@ -6,7 +6,7 @@ import {
   useGlyfChart,
   useGlyfFilters,
   type GlyfTheme,
-} from "@glyf/react";
+} from "@glyf-data/react";
 import { useEffect, useState, type ReactNode } from "react";
 
 // The site glyf built from examples/clanker_insights, copied in by
@@ -173,7 +173,7 @@ function Insights() {
             glyf-js
           </a>
           . Every chart is defined as SQL in a dbt project, built by glyf, and drawn here with{" "}
-          <code>@glyf/react</code>. The data is synthetic.
+          <code>@glyf-data/react</code>. The data is synthetic.
         </p>
         <p>
           <a href={`/glyf/clanker_insights/dashboards/${DASHBOARD}.html`}>

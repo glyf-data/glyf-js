@@ -11,7 +11,7 @@
   --signal: #c4432b;
   --focus: #1b2220;
 
-  /* @glyf/embed reads these for tiles, tables and filters. */
+  /* @glyf-data/embed reads these for tiles, tables and filters. */
   --glyf-text: var(--graphite);
   --glyf-muted: var(--steel);
   --glyf-subtle: var(--steel);

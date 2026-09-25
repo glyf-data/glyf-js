@@ -1,11 +1,11 @@
-# @glyf/react
+# @glyf-data/react
 
-React components over [`@glyf/embed`](embed.md). The core draws, filters and
+React components over [`@glyf-data/embed`](embed.md). The core draws, filters and
 themes; these components mount it and follow their props.
 
 ```tsx
-import "@glyf/embed/style.css";
-import { GlyfChart, GlyfFilters, GlyfProvider, useGlyfFilters } from "@glyf/react";
+import "@glyf-data/embed/style.css";
+import { GlyfChart, GlyfFilters, GlyfProvider, useGlyfFilters } from "@glyf-data/react";
 
 export function Insights({ theme }: { theme: "light" | "dark" }) {
   return (
