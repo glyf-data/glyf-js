@@ -1,6 +1,6 @@
 {
   "name": "@glyf-data/embed",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Draw glyf charts live in any web page: interactive charts, KPI tiles, tables and filters from a glyf bundle.",
   "keywords": [
     "glyf",
@@ -22,7 +22,8 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
     },
     "./style.css": "./dist/style.css"
   },
@@ -38,7 +39,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@glyf-data/client": "0.1.0",
+    "@glyf-data/client": "0.1.1",
     "vega": "^6.1.2",
     "vega-embed": "^7.0.2",
     "vega-lite": "^6.4.1"
