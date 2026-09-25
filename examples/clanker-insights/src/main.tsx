@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
-import "@glyf/embed/style.css";
+import "@glyf-data/embed/style.css";
 import "./styles.css";
 import { App } from "./App";
 

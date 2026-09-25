@@ -11,10 +11,11 @@
   "scripts": {
     "build": "npm run build --workspaces",
     "test": "vitest run",
-    "dev:demo": "npm run build --workspace @glyf/client --workspace @glyf/embed --workspace @glyf/react && npm run dev --workspace @glyf/example-clanker-insights",
-    "build:demo": "npm run build --workspace @glyf/client --workspace @glyf/embed --workspace @glyf/react && npm run build --workspace @glyf/example-clanker-insights",
-    "preview:demo": "npm run preview --workspace @glyf/example-clanker-insights",
-    "deploy:demo": "npm run build:demo && cd examples/clanker-insights && npx wrangler@4 deploy"
+    "dev:demo": "npm run build --workspace @glyf-data/client --workspace @glyf-data/embed --workspace @glyf-data/react && npm run dev --workspace @glyf-data/example-clanker-insights",
+    "build:demo": "npm run build --workspace @glyf-data/client --workspace @glyf-data/embed --workspace @glyf-data/react && npm run build --workspace @glyf-data/example-clanker-insights",
+    "preview:demo": "npm run preview --workspace @glyf-data/example-clanker-insights",
+    "deploy:demo": "npm run build:demo && cd examples/clanker-insights && npx wrangler@4 deploy",
+    "publish:packages": "npm publish --workspace @glyf-data/client --workspace @glyf-data/embed --workspace @glyf-data/react"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.1.1",

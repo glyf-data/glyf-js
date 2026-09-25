@@ -1,4 +1,4 @@
-// @glyf/react: React bindings for @glyf/embed. The embed core does the
+// @glyf-data/react: React bindings for @glyf-data/embed. The embed core does the
 // drawing, filtering and theming; these components mount it into React's
 // tree and keep it in step with props.
 
@@ -9,8 +9,8 @@ import {
   type Glyf,
   type GlyfOptions,
   type GlyfTheme,
-} from "@glyf/embed";
-import type { GlyfChart as GlyfChartSpec, GlyfClient } from "@glyf/client";
+} from "@glyf-data/embed";
+import type { GlyfChart as GlyfChartSpec, GlyfClient } from "@glyf-data/client";
 import {
   createContext,
   useContext,
@@ -164,5 +164,5 @@ export function GlyfFilters({ dashboard, className }: GlyfFiltersProps) {
 }
 
 export type { ActiveFilter, ChartState, Glyf, GlyfTheme };
-export type { GlyfBundle, GlyfChartArtifacts, GlyfDashboard } from "@glyf/client";
+export type { GlyfBundle, GlyfChartArtifacts, GlyfDashboard } from "@glyf-data/client";
 export type { GlyfChartSpec };

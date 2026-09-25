@@ -1,6 +1,21 @@
 {
-  "name": "@glyf/client",
+  "name": "@glyf-data/client",
   "version": "0.1.0",
+  "description": "Load a glyf bundle.json and resolve its chart and dashboard artifacts.",
+  "keywords": [
+    "glyf",
+    "dbt",
+    "analytics",
+    "charts",
+    "bundle"
+  ],
+  "homepage": "https://github.com/glyf-data/glyf-js/tree/main/packages/client#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glyf-data/glyf-js.git",
+    "directory": "packages/client"
+  },
+  "bugs": "https://github.com/glyf-data/glyf-js/issues",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -9,13 +24,17 @@
       "import": "./dist/index.js"
     }
   },
-  "scripts": {
-    "build": "tsc -p tsconfig.json"
-  },
   "files": [
     "dist"
   ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
   "devDependencies": {
     "typescript": "^5.9.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

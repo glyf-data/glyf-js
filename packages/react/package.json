@@ -1,6 +1,22 @@
 {
-  "name": "@glyf/react",
+  "name": "@glyf-data/react",
   "version": "0.1.0",
+  "description": "React components for glyf charts, KPI tiles, tables and filters, built on @glyf-data/embed.",
+  "keywords": [
+    "glyf",
+    "dbt",
+    "embedded-analytics",
+    "react",
+    "charts",
+    "vega"
+  ],
+  "homepage": "https://github.com/glyf-data/glyf-js/tree/main/packages/react#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glyf-data/glyf-js.git",
+    "directory": "packages/react"
+  },
+  "bugs": "https://github.com/glyf-data/glyf-js/issues",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -9,15 +25,16 @@
       "import": "./dist/index.js"
     }
   },
-  "scripts": {
-    "build": "tsc -p tsconfig.json"
-  },
   "files": [
     "dist"
   ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
   "dependencies": {
-    "@glyf/client": "file:../client",
-    "@glyf/embed": "file:../embed"
+    "@glyf-data/client": "0.1.0",
+    "@glyf-data/embed": "0.1.0"
   },
   "peerDependencies": {
     "react": "^18.3.0 || ^19.0.0",
@@ -27,5 +44,7 @@
     "@types/react": "^19.2.7",
     "typescript": "^5.9.3"
   },
-  "description": "React components for glyf charts, KPI tiles, tables and filters, built on @glyf/embed."
+  "publishConfig": {
+    "access": "public"
+  }
 }

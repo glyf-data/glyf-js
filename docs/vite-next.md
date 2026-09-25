@@ -49,7 +49,7 @@ Render from a client component:
 ```tsx
 "use client";
 
-import { GlyfProvider, GlyfChart } from "@glyf/react";
+import { GlyfProvider, GlyfChart } from "@glyf-data/react";
 
 export function AnalyticsPanel() {
   return (

@@ -13,17 +13,19 @@ dbt project + .ggsql charts --glyf build--> target/glyf/site/bundle.json --glyf-
 
 **See it live:** [clanker.glyfdata.com](https://clanker.glyfdata.com), a customer-facing
 analytics page for a made-up AI agent platform, drawn entirely with
-`@glyf/react` ([source](examples/clanker-insights)).
+`@glyf-data/react` ([source](examples/clanker-insights)).
 
 ## Packages
 
 | Package | What it does |
 | --- | --- |
-| [`@glyf/embed`](docs/embed.md) | The core, with no framework. Mounts a chart into any element: interactive charts from the bundle's Vega specs, KPI tiles, tables, and filter controls that drive them. Light and dark themes, your palette and font. |
-| [`@glyf/react`](docs/react.md) | React components over `@glyf/embed`: `GlyfProvider`, `GlyfChart`, `GlyfFilters`, `useGlyfFilters`. |
-| [`@glyf/client`](docs/client.md) | Loads and checks `bundle.json`, and resolves artifact URLs. Both of the above use it. |
+| [`@glyf-data/embed`](docs/embed.md) | The core, with no framework. Mounts a chart into any element: interactive charts from the bundle's Vega specs, KPI tiles, tables, and filter controls that drive them. Light and dark themes, your palette and font. |
+| [`@glyf-data/react`](docs/react.md) | React components over `@glyf-data/embed`: `GlyfProvider`, `GlyfChart`, `GlyfFilters`, `useGlyfFilters`. |
+| [`@glyf-data/client`](docs/client.md) | Loads and checks `bundle.json`, and resolves artifact URLs. Both of the above use it. |
 
-The packages are not on npm yet; they build from this repository.
+```bash
+npm install @glyf-data/react     # or @glyf-data/embed without React
+```
 
 ## Quick start
 
@@ -37,8 +39,8 @@ export:
 Build it, and serve `target/glyf/site/` beside your app. Then:
 
 ```tsx
-import "@glyf/embed/style.css";
-import { GlyfChart, GlyfFilters, GlyfProvider } from "@glyf/react";
+import "@glyf-data/embed/style.css";
+import { GlyfChart, GlyfFilters, GlyfProvider } from "@glyf-data/react";
 
 export function Insights() {
   return (
@@ -54,8 +56,8 @@ export function Insights() {
 Without React:
 
 ```ts
-import "@glyf/embed/style.css";
-import { createGlyf } from "@glyf/embed";
+import "@glyf-data/embed/style.css";
+import { createGlyf } from "@glyf-data/embed";
 
 const glyf = await createGlyf({ bundleUrl: "/glyf/bundle.json", theme: "dark" });
 glyf.mountFilters(document.querySelector("#filters")!, "insights");
@@ -71,6 +73,16 @@ glyf.mount(document.querySelector("#spend")!, "spend_by_model");
 and checks the demo's real bundle against it. A client refuses a
 `bundle_version` it does not know rather than guess.
 
+## Release
+
+Every package shares one version. Bump `version` in the three
+`packages/*/package.json` and the `@glyf-data/*` pins between them, then:
+
+```bash
+npm login                  # an account in the glyf-data npm org
+npm run publish:packages   # builds each package, then publishes it
+```
+
 ## Develop
 
 ```bash
@@ -83,8 +95,8 @@ npm run dev:demo     # the Clanker demo on a local Vite server
 ## Docs
 
 - [Overview](docs/overview.md)
-- [@glyf/embed](docs/embed.md)
-- [@glyf/react](docs/react.md)
-- [@glyf/client](docs/client.md)
+- [@glyf-data/embed](docs/embed.md)
+- [@glyf-data/react](docs/react.md)
+- [@glyf-data/client](docs/client.md)
 - [The Clanker demo](docs/examples.md)
 - [Vite and Next.js](docs/vite-next.md)

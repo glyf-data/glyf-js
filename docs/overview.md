@@ -24,7 +24,7 @@ target/glyf/site/
 `glyf-js` is the browser/app consumer:
 
 ```tsx
-import { GlyfProvider, GlyfChart } from "@glyf/react";
+import { GlyfProvider, GlyfChart } from "@glyf-data/react";
 
 export function AnalyticsPanel() {
   return (
@@ -37,12 +37,12 @@ export function AnalyticsPanel() {
 
 ## Package Split
 
-- `@glyf/client` loads `bundle.json`, refuses a `bundle_version` it does not
+- `@glyf-data/client` loads `bundle.json`, refuses a `bundle_version` it does not
   know, lists charts and dashboards, and resolves artifact URLs.
-- `@glyf/embed` draws charts into any element: Vega from the bundle's
+- `@glyf-data/embed` draws charts into any element: Vega from the bundle's
   published specs, KPI tiles, tables, and filter controls that drive them.
-- `@glyf/react` mounts `@glyf/embed` from React components and hooks.
-- `@glyf/example-clanker-insights` is a customer-facing page built with them.
+- `@glyf-data/react` mounts `@glyf-data/embed` from React components and hooks.
+- `@glyf-data/example-clanker-insights` is a customer-facing page built with them.
 
 ## Rendering
 
